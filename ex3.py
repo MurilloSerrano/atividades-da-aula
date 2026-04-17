@@ -1,5 +1,9 @@
-num = int(input('digite um numero: '))
+soma = 0
 
-if num < 0:
-    num = num * -1
-print(f'o numero digitado foi {num}')
+while True:
+    numero = int(input("informe um numero: "))
+    if numero ==0:
+        break
+    soma += numero
+
+print(f'Somatorio dos numeros: {soma}')

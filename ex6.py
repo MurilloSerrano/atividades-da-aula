@@ -1,8 +1,16 @@
-hora = int(input('digite um numero: '))
-minuto = int(input('digite outro numero: '))
-if 0 <= hora <= 23 and 0 <= minuto <= 59:
-    print("hora valida")
-    print(f'Agora são {hora}:{minuto} ')
-else:
-    print("hora invalida")
+import math
 
+menor = math.inf
+maior = -math.inf
+
+cont =  0
+while cont < 10:
+    numero = int(input("infome um numero: "))
+    if numero < menor:
+        menor = numero
+    if numero > maior:
+        maior = numero
+    cont += 1
+
+print(f"menor numero: {menor}")
+print(f"maior numero: {maior}")

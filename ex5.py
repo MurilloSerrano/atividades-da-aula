@@ -1,8 +1,9 @@
-num = int(input("digite um numero: "))
+ a = float(input("primeiro numero: "))
+ b = float(input("segundo numero: "))
 
-if num > 0:
-    print('numero é positivo')
-elif num <0:
-    print('numero é negativo')
-else:
-    print('é numero é zero!')
+ while a == b:
+     print("os dois devem ser diferente, informe outro")
+     a = float(input("primeiro numero: "))
+     b = float(input("segundo numero: "))
+
+print(f"Soma dos numeros: {a + b}")

@@ -1,9 +1,9 @@
-num1 = int(input("digite um numero: "))
-num2 = int(input("digite outro numero: "))
+fatorial = 1
+numero = int(input("informe um numero: "))
+cont = numero
 
-if num1 > num2:
-    print('O primerio numero é maior')
-elif num1 < num2:
-    print('O segundo numero é maior')
-else:
-    print('os dois são iguais')
+while cont >= 1:
+    fatorial *= cont
+    cont -= 1
+
+print(f"{numero}! = {fatorial}")    
